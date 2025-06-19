@@ -5,7 +5,7 @@ import validate from '../middleware/validator-middleware.js';
 const router = express.Router();
 
 
-router.get('/', Authcon.home);
+router.get('/home', Authcon.home);
 router.post('/register',validate(signupSchema),Authcon.register)
 router.post('/login', Authcon.login)
 
